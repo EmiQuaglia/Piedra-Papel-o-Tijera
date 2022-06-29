@@ -61,17 +61,20 @@ class Tablero {
             numeroRondasJuego++
             this.textoRondas.innerHTML=`${numeroRondasJuego}`
             this.textoRondaP1.innerHTML=`${contadorRondaP1}`
+            alert(`Elegiste piedra y Siri eligió tijera. GANASTE LA RONDA`)
         } else if((Player1.eleccionP1== Player1.piedra) && (Compu.eleccion === 2)){
             contadorRonda2++
             numeroRondas++
             this.textoRondas.innerHTML=`${numeroRondasJuego}`
             this.textoRondaP2.innerHTML=`${contadorRondaP2}`
+            alert(`Elegiste piedra y Siri eligió papel. SIRI GANÓ LA RONDA`)
         } else if ((Player1.eleccion== Player1.piedra) && (Compu.eleccion === 1)){
             alert("¡Empate! va de nuevo")
         } else if ((Player1.eleccion== Player1.papel) && (Compu.eleccion === 3)){
             contadorRonda2++
             this.textoRondas.innerHTML=`${numeroRondasJuego}`
             this.textoRondaP2.innerHTML=`${contadorRondaP2}`
+            alert(`Elegiste papel y Siri eligió tijera. SIRI GANÓ LA RONDA`)
         } else if ((Player1.eleccion== Player1.papel) && (Compu.eleccion === 2)){
             alert("¡Empate! va de nuevo")
         } else if ((Player1.eleccion== Player1.papel) && (Compu.eleccion === 1)){
@@ -79,16 +82,19 @@ class Tablero {
             numeroRondas++
             this.textoRondas.innerHTML=`${numeroRondasJuego}`
             this.textoRondaP1.innerHTML=`${contadorRondaP1}`
+            alert(`Elegiste papel y Siri eligió piedra. GANASTE LA RONDA`)
         } else if ((Player1.eleccion== Player1.tijera) && (Compu.eleccion === 1)){
             contadorRonda2++
             numeroRondas++
             this.textoRondas.innerHTML=`${numeroRondasJuego}`
             this.textoRondaP2.innerHTML=`${contadorRondaP2}`
+            alert(`Elegiste tijera y Siri eligió piedra. SIRI GANÓ LA RONDA`)
         } else if ((Player1.eleccion== Player1.tijera) && (Compu.eleccion === 2)){
             contadorRondaP1++
             numeroRondasJuego++
             this.textoRondas.innerHTML=`${numeroRondasJuego}`
             this.textoRondaP1.innerHTML=`${contadorRondaP1}`
+            alert(`Elegiste tijera y Siri eligió papel. GANASTE LA RONDA`)
         } else if ((Player1.eleccion== Player1.tijera) && (Compu.eleccion === 3)){
             alert("¡Empate! va de nuevo")
         }
@@ -97,10 +103,21 @@ class Tablero {
 
 class Compu {
     eleccion;
+    elemento;
 
     elegir(){
         this.eleccion = Math.trunc(Math.random() * (3 - 1) + 1)
-        // si la eleccion es uno, la variable toma valor piedra, y hay que imprimir alert o algo.
+
+        if (this.eleccion === 1) {
+            elemento = "piedra"
+            alert("Siri eligió piedra")
+        } else if (this.eleccion === 2) {
+            elemento = "papel"
+            alert("Siri eligió papel")
+        } else if (this.eleccion===3){
+            elemento = "tijera"
+            alert("Siri eligió tijera")
+        }
     }
 
 }
