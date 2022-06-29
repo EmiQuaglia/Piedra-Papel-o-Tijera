@@ -121,7 +121,8 @@ class Compu {
     }
 
 }
-
 // me falta llamar a los metodos de las funciones para que ande!!!!!!
 
 const player = new Player1(document)
+const compu = new Compu (document)
+const tablero = new Tablero (document)
