@@ -1,0 +1,86 @@
+.body{
+    background-color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 160px;
+}
+
+.header{
+    background-image: url("../Assets/logo-header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    margin:auto;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+}
+
+.flex-content{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.player1{
+    background-color: #9ecfd3;
+    width: 25%;
+    height: 800px;
+    text-align: center;
+
+}
+.button1{
+    background-color: #9ecfd3;
+    border: none;
+    box-sizing: content-box;
+    cursor:pointer;
+}
+
+.button2{
+    background-color: #e2a1a7;
+    border: none;
+    box-sizing: content-box;
+    cursor:pointer;
+}
+
+.player2{
+    background-color: #e2a1a7;
+    width: 25%;
+    height: 800px;
+}
+
+.opciones{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.tablero{
+    background-color: #58ac72;
+    width: 50%;
+    height:800px;
+    text-align: center; 
+ 
+}
+.marcadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.rondasJugadas, .partidasJugadas{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: larger;
+}
+
+#textName, .nombre2, #resultadorondas1, #resultadopartidas1, #resultadopartidas2, #resultadorondas2{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.textNamePC{
+    text-align: center;
+}

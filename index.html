@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>¿Piedra, papel o tijera?</title>
+</head>
+<body>
+    <header class="header">  </header>
+    <div class="flex-content">
+        <div class="player1">
+            <p>Player 1</p>
+            <div class=opciones id="opciones1">
+                <button type="button" id="piedra" class="button1" title="Piedra"> <img src="./Assets/Piedra.png" height =50% width=50% /></button>
+                <button type="button" id="papel" class="button1" title="Papel"> <img src="./Assets/Papel.png" height =50% width=50% /></button> 
+                <button type="button" id="tijera" class="button1" title="Tijera"> <img src="./Assets/Tijera.png" height =50% width=50% /></button>  
+            </div>
+        </div>
+        <div class="tablero">
+            <div>
+                <p class="rondasJugadas">Rondas jugadas:</p>
+                <p id="numeroRondas">-</p>
+                <p class="partidasJugadas">Partidas jugadas:</p>
+                <p id="numeroPartidas">-</p>
+            </div>
+            <div class="marcadores">
+                <div class="marcador1">
+                    <p id="textName"> Player 1</p> 
+                    <p class="rondas1"> Rondas ganadas:</p>
+                    <p id="resultadorondas1">-</p>
+                    <p class="partidas1"> Partidas ganadas:</p>
+                    <p id="resultadopartidas1">-</p>  
+                </div>
+                <div class="marcador2">
+                    <p class="nombre2"> Siri</p>
+                    <p class="rondas2"> Rondas ganadas:</p>
+                    <p id="resultadorondas2">-</p>
+                    <p class="partidas2"> Partidas ganadas:</p>
+                    <p id="resultadopartidas2">-</p>  
+                </div>
+            </div>
+        </div>
+        <div class="player2">
+            <p class="textNamePC">Siri</p>
+            <div class=opciones>
+                <button type="button" class="piedra2" title="Piedra"> <img src="./Assets/Piedra.png" height =50% width=50% /></button>
+                <button type="button" class="papel2" title="Papel"> <img src="./Assets/Papel.png" height =50% width=50% /></button> 
+                <button type="button" class="tijera2" title="Tijera"> <img src="./Assets/Tijera.png" height =50% width=50% /></button>  
+            </div>
+        </div>
+    </div>
+    
+    <script type= "text/javascript" src="Js/juego.js"></script> 
+</body>
+</html>
