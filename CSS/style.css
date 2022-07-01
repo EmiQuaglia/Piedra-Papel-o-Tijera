@@ -15,62 +15,49 @@
     height: 200px;
     width: 100%;
 }
-
-.flex-content{
-    margin-top: 200px;
+.flex-content, .marcadores{
     display: flex;
     flex-direction: row;
 }
+.flex-content{
+    margin-top: 200px;
+}
 
-.player1{
+.player1, .button1 {
     background-color: #9ecfd3;
+}
+.player1, .player2{
     width: 25%;
     height: 800px;
-    text-align: center;
-
 }
-.button1{
-    background-color: #9ecfd3;
+
+.button1, .button2{
     border: none;
     box-sizing: content-box;
     cursor:pointer;
 }
 
-.button2{
+.player2, .button2{
     background-color: #e2a1a7;
-    border: none;
-    box-sizing: content-box;
-    cursor:pointer;
-}
-
-.player2{
-    background-color: #e2a1a7;
-    width: 25%;
-    height: 800px;
 }
 
 .opciones{
     margin-top: 80px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .tablero{
     background-color: #58ac72;
     width: 50%;
-    height:800px;
-    text-align: center; 
- 
+    height:800px; 
 }
 .marcadores{
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 .rondasJugadas, .partidasJugadas{
     font-size: x-large;
     font-weight: bold;
 }
-
 
 p {
     font-size: larger;
@@ -81,6 +68,6 @@ p {
     font-weight: bold;
 }
 
-.textNamePC{
+.textNamePC, .player1, .player2, .tablero{
     text-align: center;
 }
